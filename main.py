@@ -1,16 +1,32 @@
-# This is a sample Python script.
+# ============================================================
+#  COMP2152 — Term Project: CTF Bug Bounty
+#  Main Runner — Runs all vulnerability check scripts
+# ============================================================
 
-# Press Ctrl+F5 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import subprocess
+import sys
+import os
 
+scripts = [
+    "example_http_check.py",
+    "example_port_check.py",
+    "example_header_check.py",
+]
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
+if __name__ == "__main__":
+    # Run scripts from the same directory as main.py
+    script_dir = os.path.dirname(os.path.abspath(__file__))
 
+    print("\n" + "=" * 50)
+    print("  COMP2152 — Bug Bounty Scanner")
+    print("  Running all vulnerability checks...")
+    print("=" * 50, flush=True)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+    for script in scripts:
+        print(f"\n>>> Running {script}...\n", flush=True)
+        script_path = os.path.join(script_dir, script)
+        subprocess.run([sys.executable, script_path])
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    print("\n" + "=" * 50)
+    print("  All checks complete.")
+    print("=" * 50 + "\n")
