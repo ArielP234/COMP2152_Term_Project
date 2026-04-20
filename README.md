@@ -6,19 +6,19 @@ Team _______
 
 ## Team Members
 
-| Member | Vulnerability Found | Branch Name |
-|--------|-------------------|-------------|
-| _______ | _______ | _______ |
-| _______ | _______ | _______ |
-| _______ | _______ | _______ |
+| Member           | Vulnerability Found | Branch Name |
+|------------------|-------------------|-------------|
+| Ariel Pokutinsky | Missing HTTPS Enforcement | ariel_vulnerability|
+| Ariel Pokutinsky | Header Information Disclosure | ariel_vulnerability |
+| Ariel Pokutinsky | Open Insecure Port | ariel_vulnerability |
 
 ## Videos
 
 Each team member records a short video (max 3 minutes) explaining their vulnerability. Add your YouTube links below:
 
-- Member 1: https://youtube.com/watch?v=_______
-- Member 2: https://youtube.com/watch?v=_______
-- Member 3: https://youtube.com/watch?v=_______
+- Member 1: https://www.youtube.com/watch?v=nR9NySjiYhE
+- Member 2: https://youtu.be/ztaGXjsbhZk
+- Member 3: https://youtu.be/xnR1jN27og0
 
 ## Target
 
